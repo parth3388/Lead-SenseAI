@@ -1,0 +1,552 @@
+LeadSense AI - Project Structure, Project Info, and Explanation
+===============================================================
+
+1. Project Overview
+-------------------
+LeadSense AI is a small monorepo with 3 main parts:
+
+- frontend/ : Next.js web application
+- backend/ : Node.js + Express API and realtime dashboard backend
+- services/lead-scoring-api/ : Python FastAPI service for ML-based lead scoring
+
+Main business idea:
+- A customer enters property requirements.
+- The frontend generates matching property results for the selected city and property type.
+- When the customer clicks "Buy Now" or "Continue as Visitor", a lead is created in the Node backend.
+- Sales users can log in to a dashboard, manage leads, see analytics, and use AI helpers.
+- A separate Python service exists for ML lead scoring and model training.
+
+
+2. High-Level Repository Structure
+----------------------------------
+LeadSense-AI/
+|-- README.md
+|-- PROJECT_STRUCTURE_AND_INFO.txt
+|-- backend/
+|   |-- index.js
+|   |-- package.json
+|   |-- ai/
+|   |   |-- data.csv
+|   |   |-- model.py
+|   |   |-- train.py
+|   |   `-- train_model.py
+|   `-- src/
+|       |-- app.js
+|       |-- config/
+|       |   |-- database.js
+|       |   `-- env.js
+|       |-- controllers/
+|       |   |-- aiController.js
+|       |   |-- authController.js
+|       |   `-- leadController.js
+|       |-- data/
+|       |   `-- store.js
+|       |-- middleware/
+|       |   |-- authenticate.js
+|       |   |-- errorHandler.js
+|       |   |-- rateLimiter.js
+|       |   |-- requestLogger.js
+|       |   `-- validate.js
+|       |-- models/
+|       |   |-- ActivityLog.js
+|       |   |-- Lead.js
+|       |   |-- LeadScore.js
+|       |   `-- User.js
+|       |-- routes/
+|       |   |-- aiRoutes.js
+|       |   |-- authRoutes.js
+|       |   |-- leadRoutes.js
+|       |   `-- publicRoutes.js
+|       |-- schemas/
+|       |   |-- aiSchemas.js
+|       |   |-- authSchemas.js
+|       |   `-- leadSchemas.js
+|       |-- services/
+|       |   |-- aiService.js
+|       |   |-- bootstrapService.js
+|       |   |-- csvLeadService.js
+|       |   |-- databaseService.js
+|       |   `-- leadService.js
+|       `-- utils/
+|           |-- appError.js
+|           |-- asyncHandler.js
+|           `-- logger.js
+|-- frontend/
+|   |-- package.json
+|   |-- next.config.ts
+|   |-- tsconfig.json
+|   |-- public/
+|   |   |-- file.svg
+|   |   |-- globe.svg
+|   |   |-- next.svg
+|   |   |-- vercel.svg
+|   |   `-- window.svg
+|   |-- lib/
+|   |   |-- api.js
+|   |   |-- config.js
+|   |   `-- propertyCatalog.js
+|   `-- app/
+|       |-- globals.css
+|       |-- layout.tsx
+|       |-- page.tsx
+|       |-- login/
+|       |   `-- page.js
+|       |-- dashboard/
+|       |   `-- page.js
+|       |-- properties/
+|       |   `-- page.tsx
+|       `-- __pycache__/   (generated Python cache files; unusual in frontend)
+`-- services/
+    `-- lead-scoring-api/
+        |-- README.md
+        |-- requirements.txt
+        |-- scripts/
+        |   `-- train_model.py
+        `-- app/
+            |-- __init__.py
+            |-- config.py
+            |-- database.py
+            |-- main.py
+            |-- ml_model.py
+            |-- models.py
+            |-- reward_engine.py
+            |-- routes.py
+            |-- schemas.py
+            `-- services/
+                |-- __init__.py
+                `-- lead_service.py
+
+
+3. What Each Main Folder Does
+-----------------------------
+
+backend/
+- This is the main API used by the frontend.
+- It handles login, authentication, lead CRUD, notes, AI endpoints, and websocket events.
+- It can work with MongoDB if MONGODB_URI is configured.
+- If MongoDB is not configured, it falls back to an in-memory store and seeds sample leads from CSV-style data.
+
+frontend/
+- This is the customer-facing and staff-facing web UI.
+- It contains:
+  - landing page for customer requirement input
+  - property results page
+  - login page
+  - dashboard page for lead management and analytics
+- It talks to the Node backend using axios/fetch.
+
+services/lead-scoring-api/
+- This is a separate Python microservice.
+- It exposes a FastAPI API for creating/listing leads with ML-generated lead scores.
+- It also contains model loading, SQLite configuration, SQLAlchemy models, and training scripts.
+- This service looks more like a clean ML demo/service, while the Node backend is the main operational app today.
+
+
+4. Main Flow of the Application
+-------------------------------
+
+Customer flow:
+1. User opens frontend/app/page.tsx.
+2. User fills customer name, city, property type, area, budget, urgency, and requirements.
+3. Frontend stores the search in sessionStorage and navigates to frontend/app/properties/page.tsx.
+4. Property results are generated locally in frontend/lib/propertyCatalog.js.
+5. When user clicks "Buy Now" or "Continue as Visitor", frontend sends POST request to:
+   /api/v1/public-interest
+6. Node backend creates a lead record and emits realtime socket events.
+7. Dashboard users see the lead in frontend/app/dashboard/page.js.
+
+Sales dashboard flow:
+1. Staff logs in through frontend/app/login/page.js.
+2. Frontend calls backend auth endpoint.
+3. JWT token is stored in localStorage.
+4. Dashboard loads leads from backend and subscribes to Socket.IO updates.
+5. Staff can:
+   - filter leads
+   - move lead through pipeline
+   - add notes
+   - edit lead
+   - delete lead
+   - run AI analysis
+   - get lead recommendations and outreach content
+
+Python ML service flow:
+1. Request hits FastAPI route in services/lead-scoring-api/app/routes.py
+2. Pydantic schema validates payload.
+3. Service calls ml_model.predict_lead_score().
+4. Trained model file is loaded from disk.
+5. Probability is converted to a lead score.
+6. Lead is saved in SQLite via SQLAlchemy.
+
+
+5. Backend Explanation
+----------------------
+
+Important backend entry files:
+
+backend/index.js
+- Starts the backend server.
+- Connects to database first.
+- Then starts Express server on port 5000 by default.
+
+backend/src/app.js
+- Builds Express app and HTTP server.
+- Configures CORS, JSON parsing, rate limiting, request logging, error handlers.
+- Creates Socket.IO server for realtime updates.
+- Mounts auth, public, AI, and lead routes.
+
+backend/src/config/database.js
+- Tries to connect to MongoDB using MONGODB_URI.
+- If connection fails or env var is missing, it switches to in-memory mode.
+- Also seeds starter users/leads when needed.
+
+backend/src/services/bootstrapService.js
+- Seeds default users and lead data.
+- Default users include admin and agent with password 1234.
+- Also loads initial leads from CSV-derived data.
+
+backend/src/routes/authRoutes.js
+- Exposes login and signup endpoints.
+
+backend/src/controllers/authController.js
+- Handles login/signup.
+- On login, creates JWT token and returns redirect path based on role.
+
+backend/src/routes/publicRoutes.js
+- Public endpoint used by property browsing flow.
+- Lets customer actions create leads without requiring dashboard login.
+
+backend/src/routes/leadRoutes.js
+- Protected lead routes after authentication.
+- Supports list, get, create, update, delete, and add note.
+
+backend/src/controllers/leadController.js
+- Core lead controller.
+- Creates leads, updates them, logs activity, stores score snapshots, and emits websocket events.
+- Also contains derivePublicLeadDetails(), which converts property browsing actions into lead score-related values such as visits, timeSpent, score, and tag.
+
+backend/src/services/databaseService.js
+- Main data access layer.
+- Supports both:
+  - MongoDB models
+  - in-memory fallback arrays
+- Central place for user lookup, lead CRUD, notes, activity logs, and lead score snapshots.
+
+backend/src/services/leadService.js
+- Pure business logic helpers.
+- Decides if a lead is high intent.
+- Builds human-readable reasoning.
+- Ranks leads for recommendations.
+
+backend/src/routes/aiRoutes.js
+- Protected AI routes for dashboard users.
+
+backend/src/controllers/aiController.js
+- Returns AI analysis from Python or fallback logic.
+- Returns recommendations for best leads.
+- Explains why a lead matters.
+- Generates email/text outreach.
+- Uses OpenAI if OPENAI_API_KEY exists; otherwise returns fallback content.
+
+backend/src/services/aiService.js
+- Calls OpenAI chat completions when configured.
+- Can run Python analysis script at backend/ai/model.py.
+- If Python analysis fails, falls back to JavaScript-based heuristic analysis.
+
+backend/src/models/
+- Mongoose models for User, Lead, LeadScore, ActivityLog.
+
+backend/src/middleware/
+- authenticate.js : validates JWT
+- validate.js : validates payloads with schemas
+- requestLogger.js : logs requests
+- rateLimiter.js : rate limiting
+- errorHandler.js : not found + error response formatting
+
+backend/src/schemas/
+- zod-like validation structure for auth, lead, and AI endpoints
+
+
+6. Backend AI Folder Explanation
+--------------------------------
+
+backend/ai/data.csv
+- Small dataset used for training/testing analysis.
+
+backend/ai/model.py
+- Reads ai/data.csv
+- Trains multiple models:
+  - Logistic Regression
+  - Random Forest
+  - XGBoost
+- Compares metrics like accuracy, precision, recall, ROC AUC
+- Calculates feature importance and SHAP importance
+- Prints JSON output so the Node backend can consume it
+
+backend/ai/train_model.py
+- Separate standalone training script
+- Creates synthetic data with features:
+  - age
+  - income
+  - browsing_frequency
+  - time_spent
+  - location_score
+- Trains XGBoost and saves xgb_model.pkl
+- This file matches the Python service feature format more closely
+
+Important note:
+- backend/ai/model.py and backend/ai/train_model.py use different feature sets.
+- model.py uses visits/timeSpent/budget/urgencyScore from CSV demo data.
+- train_model.py uses age/income/browsing_frequency/time_spent/location_score synthetic data.
+- This suggests the repo currently contains 2 ML demo directions rather than one fully unified pipeline.
+
+
+7. Frontend Explanation
+-----------------------
+
+frontend/app/page.tsx
+- Main landing page.
+- Customer fills the property requirement form.
+- Stores search info in sessionStorage.
+- Redirects to /properties with query params.
+
+frontend/app/properties/page.tsx
+- Reads search params or sessionStorage.
+- Generates property matches using frontend/lib/propertyCatalog.js.
+- Shows 5 matching properties for the selected city/type.
+- On action:
+  - Buy Now => customerType = buyer
+  - Continue as Visitor => customerType = visitor
+- Sends lead creation request to backend /api/v1/public-interest
+
+frontend/lib/propertyCatalog.js
+- Generates mock property inventory based on:
+  - city
+  - property type
+  - area
+  - budget
+- This is currently frontend-generated data, not database-fetched inventory.
+
+frontend/app/login/page.js
+- Login screen.
+- Sends username/password to backend.
+- Stores JWT token and redirects.
+- UI text says:
+  - admin / 1234 opens dashboard
+  - customer / 1234 opens customer property flow
+
+frontend/app/dashboard/page.js
+- Main sales dashboard.
+- Loads leads from backend.
+- Connects to Socket.IO for live updates.
+- Supports:
+  - pipeline view
+  - analytics view
+  - settings view
+  - lead editing
+  - note saving
+  - lead deletion
+  - AI analysis
+  - AI recommendations
+  - email and text generation
+
+frontend/lib/api.js
+- Shared axios client.
+
+frontend/lib/config.js
+- Defines API base URL.
+- Default backend URL is http://localhost:5000
+
+frontend/app/layout.tsx
+- Root Next.js layout wrapper.
+
+frontend/app/globals.css
+- Global styling.
+
+Observation:
+- frontend/app/__pycache__/ exists inside frontend.
+- These are Python cache files and usually should not be committed in a Next.js frontend folder.
+- They are most likely leftover generated artifacts.
+
+
+8. Python Lead Scoring Service Explanation
+------------------------------------------
+
+services/lead-scoring-api/app/main.py
+- FastAPI app factory.
+- Creates tables on startup.
+- Adds root route and includes API router.
+
+services/lead-scoring-api/app/routes.py
+- Exposes:
+  - POST /lead/ to create lead with score
+  - GET /leads/ to list leads
+
+services/lead-scoring-api/app/schemas.py
+- Pydantic request/response schemas.
+- Current ML service expects:
+  - age
+  - income
+  - browsing_frequency
+  - time_spent
+  - location_score
+
+services/lead-scoring-api/app/services/lead_service.py
+- Calls ML model prediction.
+- Creates SQLAlchemy Lead row.
+- Saves it in database.
+
+services/lead-scoring-api/app/ml_model.py
+- Loads serialized model from disk using joblib.
+- Predicts conversion probability.
+- Returns a percentage score from 0 to 100.
+
+services/lead-scoring-api/app/models.py
+- SQLAlchemy models:
+  - Lead
+  - Agent
+
+services/lead-scoring-api/app/database.py
+- Configures SQLAlchemy engine, session, and Base.
+
+services/lead-scoring-api/app/config.py
+- Reads settings from environment or .env.
+- Default database path:
+  services/lead-scoring-api/data/leadsense.db
+- Default model path:
+  services/lead-scoring-api/models/xgb_model.pkl
+
+services/lead-scoring-api/app/reward_engine.py
+- Calculates reward points for an agent.
+- Gives bonuses for high-score and converted leads.
+
+services/lead-scoring-api/scripts/train_model.py
+- Trains and saves XGBoost model for the Python ML service.
+- Default output path points into services/lead-scoring-api/models/xgb_model.pkl
+
+
+9. Technology Stack
+-------------------
+
+Frontend:
+- Next.js
+- React
+- Tailwind CSS
+- Axios
+- Socket.IO client
+- Recharts
+- Lucide icons
+
+Backend:
+- Node.js
+- Express
+- Socket.IO
+- JWT
+- Mongoose
+- bcryptjs
+- OpenAI SDK
+- Zod-style validation layer
+
+Python service:
+- FastAPI
+- SQLAlchemy
+- Pydantic / pydantic-settings
+- joblib
+- numpy
+- pandas
+- scikit-learn
+- xgboost
+
+
+10. Data and Storage
+--------------------
+
+Node backend storage:
+- Preferred: MongoDB
+- Fallback: in-memory arrays from backend/src/data/store.js
+
+Python service storage:
+- Default: SQLite database file
+
+Lead sources in this project:
+- Dashboard-created leads
+- Public property browsing leads
+- Seed/sample leads from CSV conversion
+
+
+11. Authentication and Security
+-------------------------------
+
+- Login uses JWT.
+- Protected dashboard/backend routes require Authorization token.
+- Public property-interest route is intentionally open.
+- Basic request rate limiting is enabled in backend.
+- CORS currently allows local frontend origins.
+
+
+12. Important Environment Expectations
+--------------------------------------
+
+Backend likely expects:
+- PORT
+- MONGODB_URI
+- MONGODB_DB
+- OPENAI_API_KEY
+- JWT secret fallback is probably defined in middleware/authenticate.js
+
+Frontend likely expects:
+- NEXT_PUBLIC_API_BASE_URL
+
+Python service expects:
+- database_url
+- model_path
+
+
+13. Current Architecture Summary
+--------------------------------
+
+What is clearly working as a concept:
+- Customer enters property requirements
+- Property options are shown for chosen city/type
+- Buyer/visitor actions become leads
+- Dashboard manages leads
+- AI helper endpoints provide analysis and outreach
+- Separate Python ML service exists for scoring experiments or future production use
+
+What looks important to understand:
+- The main live app flow currently depends mostly on the Node backend.
+- The Python FastAPI service is separate and not obviously wired into the frontend flow yet.
+- ML/training logic exists in two places:
+  - backend/ai/
+  - services/lead-scoring-api/
+- That means the repo appears to mix:
+  - a CRM-style lead management app
+  - a property lead capture flow
+  - a separate ML microservice demo
+
+
+14. Simple "How This Project Works" Explanation
+-----------------------------------------------
+This project is a real-estate lead generation and lead management system.
+
+The frontend lets a customer search for a property by city and type. The app then generates matching properties and lets the customer act as a buyer or a visitor. That action creates a lead in the Node backend.
+
+The backend stores leads, manages authentication, powers the dashboard, and sends realtime updates. It also provides AI helper features like lead recommendations, lead explanation, and outreach message generation.
+
+The Python service is a separate machine-learning service that can score leads using a trained model. It looks like a supporting or future-oriented service, while the Node backend is the core app used by the current frontend.
+
+
+15. Suggested Startup Order
+---------------------------
+If running locally, the likely startup order is:
+
+1. Start backend on port 5000
+2. Start frontend on port 3000
+3. Optionally start Python lead-scoring service separately if needed
+
+
+16. Final Notes
+---------------
+
+- This file explains the current codebase based on the files present in the repository.
+- Some parts are polished production-style modules, and some parts are demo/sample/training code.
+- The project is best understood as a monorepo with one main user flow and one separate ML scoring service.

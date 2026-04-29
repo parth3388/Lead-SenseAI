@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+pydantic-settings
+pandas
+numpy
+xgboost
+scikit-learn
+joblib

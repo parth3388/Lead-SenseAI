@@ -1,0 +1,453 @@
+{"timestamp":"2026-04-12T12:47:49.983Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T12:47:50.212Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":27,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:47:50.240Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":6,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:47:50.260Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/leads","statusCode":201,"durationMs":12,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:49:27.362Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T12:49:27.378Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-12T12:49:46.713Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":18,"ip":"::1"}
+{"timestamp":"2026-04-12T12:50:09.267Z","level":"error","message":"Request failed","method":"GET","path":"/ai-analysis","statusCode":404,"error":"Lead not found"}
+{"timestamp":"2026-04-12T12:50:09.270Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":404,"durationMs":15,"ip":"::1"}
+{"timestamp":"2026-04-12T12:50:12.385Z","level":"error","message":"Request failed","method":"GET","path":"/ai-analysis","statusCode":404,"error":"Lead not found"}
+{"timestamp":"2026-04-12T12:50:12.388Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":404,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T12:51:15.004Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T12:51:15.133Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":15,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:51:15.163Z","level":"error","message":"Request failed","method":"GET","path":"/ai-analysis","statusCode":404,"error":"Lead not found"}
+{"timestamp":"2026-04-12T12:51:15.165Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":404,"durationMs":9,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:51:33.409Z","level":"error","message":"Request failed","method":"GET","path":"/ai-analysis","statusCode":404,"error":"Lead not found"}
+{"timestamp":"2026-04-12T12:51:33.413Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":404,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T12:51:36.677Z","level":"error","message":"Request failed","method":"GET","path":"/ai-recommendations","statusCode":404,"error":"Lead not found"}
+{"timestamp":"2026-04-12T12:51:36.681Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":404,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T12:51:40.508Z","level":"error","message":"Request failed","method":"GET","path":"/ai-analysis","statusCode":404,"error":"Lead not found"}
+{"timestamp":"2026-04-12T12:51:40.511Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":404,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T12:51:51.385Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T12:51:51.510Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":24,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:51:51.610Z","level":"error","message":"Request failed","method":"GET","path":"/ai-analysis","statusCode":500,"error":"AI Error"}
+{"timestamp":"2026-04-12T12:51:51.613Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":500,"durationMs":20,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:53:05.621Z","level":"error","message":"Request failed","method":"GET","path":"/ai-analysis","statusCode":404,"error":"Lead not found"}
+{"timestamp":"2026-04-12T12:53:05.625Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":404,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T12:54:07.562Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T12:54:07.710Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":20,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:54:07.749Z","level":"warn","message":"Python AI analysis failed. Returning fallback analysis.","error":"spawn EPERM"}
+{"timestamp":"2026-04-12T12:54:07.754Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":200,"durationMs":18,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:54:40.611Z","level":"error","message":"Request failed","method":"GET","path":"/ai-analysis","statusCode":404,"error":"Lead not found"}
+{"timestamp":"2026-04-12T12:54:40.614Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":404,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T12:55:02.689Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T12:55:02.709Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-12T12:55:02.856Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":20,"ip":"::1"}
+{"timestamp":"2026-04-12T12:55:19.916Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":200,"durationMs":9705,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:55:28.708Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":304,"durationMs":8788,"ip":"::ffff:127.0.0.1"}
+{"timestamp":"2026-04-12T12:55:41.187Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":200,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T12:55:56.083Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-email","statusCode":200,"durationMs":12,"ip":"::1"}
+{"timestamp":"2026-04-12T12:56:04.071Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-outreach","statusCode":200,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-12T12:56:09.885Z","level":"info","message":"HTTP request completed","method":"GET","path":"/lead-reasoning/2","statusCode":200,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-12T12:56:12.450Z","level":"info","message":"HTTP request completed","method":"GET","path":"/lead-reasoning/1","statusCode":200,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-12T15:37:25.436Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T15:37:25.478Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-12T15:37:44.222Z","level":"error","message":"Request failed","method":"GET","path":"/leads","statusCode":401,"error":"Invalid token"}
+{"timestamp":"2026-04-12T15:37:44.234Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":401,"durationMs":27,"ip":"::1"}
+{"timestamp":"2026-04-12T15:37:49.241Z","level":"error","message":"Request failed","method":"GET","path":"/ai-analysis","statusCode":401,"error":"Invalid token"}
+{"timestamp":"2026-04-12T15:37:49.245Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":401,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T15:37:56.698Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":13,"ip":"::1"}
+{"timestamp":"2026-04-12T15:37:57.108Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T15:38:17.708Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":304,"durationMs":13561,"ip":"::1"}
+{"timestamp":"2026-04-12T15:38:23.305Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":304,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-12T15:38:36.872Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-email","statusCode":200,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T15:38:42.464Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-outreach","statusCode":200,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T15:41:28.842Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":40,"ip":"::1"}
+{"timestamp":"2026-04-12T15:41:29.424Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":19,"ip":"::1"}
+{"timestamp":"2026-04-12T15:42:04.346Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":304,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T15:42:19.352Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-outreach","statusCode":200,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T15:42:23.716Z","level":"info","message":"HTTP request completed","method":"GET","path":"/lead-reasoning/1","statusCode":304,"durationMs":35,"ip":"::1"}
+{"timestamp":"2026-04-12T15:42:28.621Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/1","statusCode":200,"durationMs":36,"ip":"::1"}
+{"timestamp":"2026-04-12T15:42:37.404Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/1","statusCode":200,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T15:46:22.170Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":60,"ip":"::1"}
+{"timestamp":"2026-04-12T15:46:24.143Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":22,"ip":"::1"}
+{"timestamp":"2026-04-12T15:55:30.059Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":35,"ip":"::1"}
+{"timestamp":"2026-04-12T15:55:31.390Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":17,"ip":"::1"}
+{"timestamp":"2026-04-12T15:55:43.467Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":304,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T15:55:51.919Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":304,"durationMs":16157,"ip":"::1"}
+{"timestamp":"2026-04-12T16:02:48.366Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":40,"ip":"::1"}
+{"timestamp":"2026-04-12T16:02:49.383Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":26,"ip":"::1"}
+{"timestamp":"2026-04-12T16:04:06.815Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:04:06.821Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:04:16.850Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:04:16.861Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:04:22.925Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:04:22.931Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T16:04:38.149Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:04:40.331Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:05:04.981Z","level":"error","message":"Request failed","method":"POST","path":"/login","statusCode":401,"error":"Invalid credentials"}
+{"timestamp":"2026-04-12T16:05:04.987Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":401,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T16:05:18.469Z","level":"error","message":"Request failed","method":"POST","path":"/login","statusCode":401,"error":"Invalid credentials"}
+{"timestamp":"2026-04-12T16:05:18.474Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":401,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T16:05:30.828Z","level":"error","message":"Request failed","method":"POST","path":"/login","statusCode":401,"error":"Invalid credentials"}
+{"timestamp":"2026-04-12T16:05:30.833Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":401,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T16:05:46.700Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":12,"ip":"::1"}
+{"timestamp":"2026-04-12T16:05:47.348Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:06:05.554Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:06:05.557Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-12T16:06:13.122Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:06:13.125Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-12T16:06:13.837Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:06:13.841Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-12T16:06:30.543Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T16:06:30.615Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-12T16:06:43.019Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:06:43.092Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":78,"ip":"::1"}
+{"timestamp":"2026-04-12T16:06:45.765Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:06:45.770Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T16:06:50.247Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":29,"ip":"::1"}
+{"timestamp":"2026-04-12T16:06:50.261Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:07:12.574Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":19,"ip":"::1"}
+{"timestamp":"2026-04-12T16:07:25.518Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:07:25.522Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-12T16:10:06.480Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:10:06.493Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":15,"ip":"::1"}
+{"timestamp":"2026-04-12T16:10:08.447Z","level":"error","message":"Request failed","method":"POST","path":"/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:10:08.450Z","level":"info","message":"HTTP request completed","method":"POST","path":"/public-interest","statusCode":403,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-12T16:11:07.603Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":36,"ip":"::1"}
+{"timestamp":"2026-04-12T16:11:24.752Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:11:24.760Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":29,"ip":"::1"}
+{"timestamp":"2026-04-12T16:11:30.778Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:11:30.788Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":28,"ip":"::1"}
+{"timestamp":"2026-04-12T16:12:50.616Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:12:50.625Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":28,"ip":"::1"}
+{"timestamp":"2026-04-12T16:12:51.661Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:12:51.667Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":15,"ip":"::1"}
+{"timestamp":"2026-04-12T16:12:52.209Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:12:52.213Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":11,"ip":"::1"}
+{"timestamp":"2026-04-12T16:12:52.459Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:12:52.469Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":35,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:05.493Z","level":"error","message":"Request failed","method":"GET","path":"/api/v1/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:13:05.509Z","level":"info","message":"HTTP request completed","method":"GET","path":"/api/v1/public-interest","statusCode":403,"durationMs":16,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:05.735Z","level":"error","message":"Request failed","method":"GET","path":"/favicon.ico","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:13:05.746Z","level":"info","message":"HTTP request completed","method":"GET","path":"/favicon.ico","statusCode":403,"durationMs":12,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:11.077Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:11.085Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":16,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:21.419Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:24.108Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:24.110Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:25.635Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:25.638Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:26.403Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:26.407Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:26.625Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:26.629Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:26.848Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:26.851Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:57.360Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:57.365Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":14,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:58.119Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:58.122Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:58.267Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:58.271Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":11,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:58.395Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:58.397Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:58.519Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:58.521Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:58.645Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:58.649Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:58.768Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:58.771Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:58.895Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:58.897Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:59.019Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:59.022Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:59.144Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:59.147Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:59.270Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:59.275Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":11,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:59.409Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:59.437Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":44,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:59.542Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:59.545Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":25,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:59.647Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:59.651Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T16:13:59.769Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:13:59.772Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:14:00.272Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:14:00.276Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:14:00.438Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:14:00.444Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":14,"ip":"::1"}
+{"timestamp":"2026-04-12T16:14:00.588Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:14:00.592Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:14:00.740Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:14:00.742Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T16:14:00.962Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"error":"Route not found: /api/v1/public-interest"}
+{"timestamp":"2026-04-12T16:14:00.964Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":404,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T16:14:09.452Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-12T16:14:11.020Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:14:25.686Z","level":"error","message":"Request failed","method":"GET","path":"/api/v1/public-interest","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:14:25.689Z","level":"info","message":"HTTP request completed","method":"GET","path":"/api/v1/public-interest","statusCode":403,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-12T16:14:25.819Z","level":"error","message":"Request failed","method":"GET","path":"/favicon.ico","statusCode":403,"error":"No token provided"}
+{"timestamp":"2026-04-12T16:14:25.826Z","level":"info","message":"HTTP request completed","method":"GET","path":"/favicon.ico","statusCode":403,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T16:17:01.289Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T16:17:01.311Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-12T16:18:30.038Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.name","message":"Name is required"},{"path":"body.interest","message":"Interest details are required"},{"path":"body.location","message":"Location is required"}]}
+{"timestamp":"2026-04-12T16:18:30.065Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":61,"ip":"::1"}
+{"timestamp":"2026-04-12T16:18:31.740Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.name","message":"Name is required"},{"path":"body.interest","message":"Interest details are required"},{"path":"body.location","message":"Location is required"}]}
+{"timestamp":"2026-04-12T16:18:31.743Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T16:19:04.052Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":201,"durationMs":18,"ip":"::1"}
+{"timestamp":"2026-04-12T16:19:12.498Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":31,"ip":"::1"}
+{"timestamp":"2026-04-12T16:19:12.516Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T16:19:43.761Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-email","statusCode":200,"durationMs":11,"ip":"::1"}
+{"timestamp":"2026-04-12T16:26:57.636Z","level":"info","message":"HTTP request completed","method":"GET","path":"/lead-reasoning/3","statusCode":200,"durationMs":46,"ip":"::1"}
+{"timestamp":"2026-04-12T16:27:01.600Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-outreach","statusCode":200,"durationMs":44,"ip":"::1"}
+{"timestamp":"2026-04-12T16:28:27.382Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":200,"durationMs":14,"ip":"::1"}
+{"timestamp":"2026-04-12T16:28:32.992Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":200,"durationMs":11196,"ip":"::1"}
+{"timestamp":"2026-04-12T16:31:27.754Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":304,"durationMs":15,"ip":"::1"}
+{"timestamp":"2026-04-12T16:32:01.914Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T16:32:01.932Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-12T16:32:10.495Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":16,"ip":"::1"}
+{"timestamp":"2026-04-12T16:33:40.065Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":16,"ip":"::1"}
+{"timestamp":"2026-04-12T16:33:51.804Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-12T16:34:48.560Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":201,"durationMs":13,"ip":"::1"}
+{"timestamp":"2026-04-12T16:34:51.507Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T16:34:51.524Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":11,"ip":"::1"}
+{"timestamp":"2026-04-12T16:35:03.007Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":200,"durationMs":13,"ip":"::1"}
+{"timestamp":"2026-04-12T16:35:11.913Z","level":"info","message":"HTTP request completed","method":"GET","path":"/lead-reasoning/3","statusCode":200,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-12T16:35:13.630Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-outreach","statusCode":200,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T16:35:22.517Z","level":"error","message":"Request failed","method":"PATCH","path":"/leads/3","statusCode":400,"error":"Validation failed","details":[{"path":"body.status","message":"Invalid option: expected one of \"New\"|\"Qualified\"|\"Converted\"|\"Lost\""}]}
+{"timestamp":"2026-04-12T16:35:22.520Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":400,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:20.948Z","level":"error","message":"Request failed","method":"PATCH","path":"/leads/3","statusCode":400,"error":"Validation failed","details":[{"path":"body.status","message":"Invalid option: expected one of \"New\"|\"Qualified\"|\"Converted\"|\"Lost\""}]}
+{"timestamp":"2026-04-12T16:37:20.955Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":400,"durationMs":26,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:31.789Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/1","statusCode":200,"durationMs":11,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:35.007Z","level":"error","message":"Request failed","method":"PATCH","path":"/leads/3","statusCode":400,"error":"Validation failed","details":[{"path":"body.status","message":"Invalid option: expected one of \"New\"|\"Qualified\"|\"Converted\"|\"Lost\""}]}
+{"timestamp":"2026-04-12T16:37:35.011Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":400,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:37.068Z","level":"error","message":"Request failed","method":"PATCH","path":"/leads/3","statusCode":400,"error":"Validation failed","details":[{"path":"body.status","message":"Invalid option: expected one of \"New\"|\"Qualified\"|\"Converted\"|\"Lost\""}]}
+{"timestamp":"2026-04-12T16:37:37.072Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":400,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:38.114Z","level":"error","message":"Request failed","method":"PATCH","path":"/leads/3","statusCode":400,"error":"Validation failed","details":[{"path":"body.status","message":"Invalid option: expected one of \"New\"|\"Qualified\"|\"Converted\"|\"Lost\""}]}
+{"timestamp":"2026-04-12T16:37:38.118Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":400,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:38.300Z","level":"error","message":"Request failed","method":"PATCH","path":"/leads/3","statusCode":400,"error":"Validation failed","details":[{"path":"body.status","message":"Invalid option: expected one of \"New\"|\"Qualified\"|\"Converted\"|\"Lost\""}]}
+{"timestamp":"2026-04-12T16:37:38.302Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":400,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:38.495Z","level":"error","message":"Request failed","method":"PATCH","path":"/leads/3","statusCode":400,"error":"Validation failed","details":[{"path":"body.status","message":"Invalid option: expected one of \"New\"|\"Qualified\"|\"Converted\"|\"Lost\""}]}
+{"timestamp":"2026-04-12T16:37:38.497Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":400,"durationMs":11,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:38.692Z","level":"error","message":"Request failed","method":"PATCH","path":"/leads/3","statusCode":400,"error":"Validation failed","details":[{"path":"body.status","message":"Invalid option: expected one of \"New\"|\"Qualified\"|\"Converted\"|\"Lost\""}]}
+{"timestamp":"2026-04-12T16:37:38.694Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":400,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:38.873Z","level":"error","message":"Request failed","method":"PATCH","path":"/leads/3","statusCode":400,"error":"Validation failed","details":[{"path":"body.status","message":"Invalid option: expected one of \"New\"|\"Qualified\"|\"Converted\"|\"Lost\""}]}
+{"timestamp":"2026-04-12T16:37:38.876Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/3","statusCode":400,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:40.168Z","level":"info","message":"HTTP request completed","method":"GET","path":"/lead-reasoning/3","statusCode":304,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-12T16:37:42.618Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-outreach","statusCode":200,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-12T16:42:28.134Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":24,"ip":"::1"}
+{"timestamp":"2026-04-12T16:42:30.170Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-12T16:42:52.158Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-12T16:42:52.184Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-12T16:43:05.909Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":35,"ip":"::1"}
+{"timestamp":"2026-04-13T05:20:57.576Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-13T05:20:57.602Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-13T05:35:08.077Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":201,"durationMs":58,"ip":"::1"}
+{"timestamp":"2026-04-13T05:35:14.634Z","level":"error","message":"Request failed","method":"GET","path":"/leads","statusCode":401,"error":"Invalid token"}
+{"timestamp":"2026-04-13T05:35:14.638Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":401,"durationMs":33,"ip":"::1"}
+{"timestamp":"2026-04-13T05:35:14.660Z","level":"error","message":"Request failed","method":"GET","path":"/leads","statusCode":401,"error":"Invalid token"}
+{"timestamp":"2026-04-13T05:35:14.666Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":401,"durationMs":18,"ip":"::1"}
+{"timestamp":"2026-04-13T05:35:24.253Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":12,"ip":"::1"}
+{"timestamp":"2026-04-13T05:35:26.509Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-13T05:36:33.846Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-email","statusCode":200,"durationMs":13,"ip":"::1"}
+{"timestamp":"2026-04-13T05:36:51.137Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-outreach","statusCode":200,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-13T05:37:03.717Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/61","statusCode":200,"durationMs":16,"ip":"::1"}
+{"timestamp":"2026-04-13T05:37:07.515Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/61","statusCode":200,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-13T05:37:10.817Z","level":"info","message":"HTTP request completed","method":"PATCH","path":"/leads/61","statusCode":200,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-13T05:40:06.018Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":12,"ip":"::1"}
+{"timestamp":"2026-04-13T05:40:06.425Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-13T05:40:19.759Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":200,"durationMs":11458,"ip":"::1"}
+{"timestamp":"2026-04-13T05:41:03.677Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":200,"durationMs":12,"ip":"::1"}
+{"timestamp":"2026-04-13T05:41:03.745Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":304,"durationMs":7920,"ip":"::1"}
+{"timestamp":"2026-04-13T05:41:19.685Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":304,"durationMs":5905,"ip":"::1"}
+{"timestamp":"2026-04-13T06:08:38.455Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-13T06:08:38.480Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-13T06:13:10.141Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":201,"durationMs":57,"ip":"::1"}
+{"timestamp":"2026-04-13T06:15:27.927Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":132,"ip":"::1"}
+{"timestamp":"2026-04-13T06:15:30.740Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":66,"ip":"::1"}
+{"timestamp":"2026-04-13T06:52:02.214Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-13T06:52:02.236Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-13T07:00:51.417Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:00:51.440Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":47,"ip":"::1"}
+{"timestamp":"2026-04-13T07:00:55.666Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:00:55.670Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-13T07:00:56.650Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:00:56.652Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:02:37.414Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:02:37.419Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-13T07:02:45.515Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:02:45.518Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:02:46.575Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:02:46.577Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:02:55.871Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":26,"ip":"::1"}
+{"timestamp":"2026-04-13T07:02:55.886Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-13T07:04:10.880Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:04:10.885Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-13T07:04:11.648Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:04:11.650Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:04:11.839Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:04:11.855Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":35,"ip":"::1"}
+{"timestamp":"2026-04-13T07:04:12.032Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:04:12.035Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-13T07:04:13.057Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:04:13.059Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:04:30.235Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-13T07:04:30.252Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-13T07:05:24.971Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:24.977Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":18,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:26.623Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:26.625Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:30.528Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:30.530Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:31.505Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:31.508Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:32.125Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:32.128Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:32.454Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:32.456Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:32.606Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:32.609Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:32.765Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:32.767Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:32.926Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:32.928Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:33.078Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:33.080Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:33.215Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:33.217Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:33.353Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:33.355Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:33.485Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:33.489Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:33.629Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:33.631Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:33.846Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:33.848Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:34.383Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:34.385Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:34.996Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:34.998Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:39.295Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:39.297Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":2,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:40.048Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:40.050Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:40.888Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:40.889Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":2,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:41.658Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:41.660Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:55.246Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:55.247Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":2,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:56.206Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:56.208Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:57.837Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:57.839Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:05:59.084Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:05:59.086Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:08:58.771Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:08:58.778Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":19,"ip":"::1"}
+{"timestamp":"2026-04-13T07:08:59.898Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:08:59.900Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:09:00.512Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:09:00.514Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:09:04.654Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:09:04.656Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:09:28.615Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-13T07:09:28.636Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-13T07:09:30.128Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:09:30.134Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":18,"ip":"::1"}
+{"timestamp":"2026-04-13T07:09:32.192Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:09:32.194Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:13:34.959Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:13:34.966Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-13T07:13:40.387Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:13:40.390Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:13:42.197Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:13:42.199Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:13:47.945Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":16,"ip":"::1"}
+{"timestamp":"2026-04-13T07:13:47.955Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-13T07:13:59.406Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:13:59.408Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:02.408Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:02.411Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:02.559Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:02.561Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:02.713Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:02.716Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:02.836Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:02.838Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:02.967Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:02.969Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:03.120Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:03.122Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:03.338Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:03.340Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:04.123Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:04.127Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:04.281Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:04.283Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":2,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:04.429Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:04.430Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":2,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:04.562Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:04.564Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:04.691Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:04.693Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:14:04.912Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:14:04.914Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:15:55.211Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:15:55.223Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":14,"ip":"::1"}
+{"timestamp":"2026-04-13T07:15:56.123Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:15:56.124Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":2,"ip":"::1"}
+{"timestamp":"2026-04-13T07:15:56.654Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:15:56.655Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":2,"ip":"::1"}
+{"timestamp":"2026-04-13T07:15:56.812Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:15:56.814Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:15:56.943Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:15:56.945Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:15:57.172Z","level":"error","message":"Request failed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"error":"Validation failed","details":[{"path":"body.interest","message":"Interest details are required"}]}
+{"timestamp":"2026-04-13T07:15:57.174Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":400,"durationMs":3,"ip":"::1"}
+{"timestamp":"2026-04-13T07:16:27.452Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":201,"durationMs":8,"ip":"::1"}
+{"timestamp":"2026-04-13T07:16:31.809Z","level":"error","message":"Request failed","method":"GET","path":"/leads","statusCode":401,"error":"Invalid token"}
+{"timestamp":"2026-04-13T07:16:31.812Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":401,"durationMs":7,"ip":"::1"}
+{"timestamp":"2026-04-13T07:16:31.817Z","level":"error","message":"Request failed","method":"GET","path":"/leads","statusCode":401,"error":"Invalid token"}
+{"timestamp":"2026-04-13T07:16:31.819Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":401,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-13T07:16:40.252Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":11,"ip":"::1"}
+{"timestamp":"2026-04-13T07:16:41.350Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-14T04:45:21.495Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-14T04:45:21.528Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-14T04:45:56.524Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":27,"ip":"::1"}
+{"timestamp":"2026-04-14T04:46:05.775Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-14T04:46:07.050Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":15,"ip":"::1"}
+{"timestamp":"2026-04-14T04:46:43.647Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":4,"ip":"::1"}
+{"timestamp":"2026-04-14T04:49:15.429Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":201,"durationMs":43,"ip":"::1"}
+{"timestamp":"2026-04-14T04:49:24.992Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":21,"ip":"::1"}
+{"timestamp":"2026-04-14T04:49:25.009Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":11,"ip":"::1"}
+{"timestamp":"2026-04-14T04:51:58.427Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-email","statusCode":200,"durationMs":95,"ip":"::1"}
+{"timestamp":"2026-04-14T04:52:14.841Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-outreach","statusCode":200,"durationMs":61,"ip":"::1"}
+{"timestamp":"2026-04-14T05:07:08.369Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":69,"ip":"::1"}
+{"timestamp":"2026-04-14T05:07:21.712Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":27,"ip":"::1"}
+{"timestamp":"2026-04-14T05:07:21.726Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-14T09:44:19.012Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-14T09:44:19.041Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-14T09:45:17.001Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":35,"ip":"::1"}
+{"timestamp":"2026-04-16T07:05:20.566Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-16T07:05:20.599Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-16T07:06:57.246Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":24,"ip":"::1"}
+{"timestamp":"2026-04-16T07:07:15.924Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":12,"ip":"::1"}
+{"timestamp":"2026-04-16T07:07:15.950Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":304,"durationMs":6,"ip":"::1"}
+{"timestamp":"2026-04-16T07:07:22.509Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":304,"durationMs":5,"ip":"::1"}
+{"timestamp":"2026-04-16T07:07:33.763Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":304,"durationMs":13691,"ip":"::1"}
+{"timestamp":"2026-04-18T06:14:33.395Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-18T06:14:33.457Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-18T06:24:19.529Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":201,"durationMs":90,"ip":"::1"}
+{"timestamp":"2026-04-18T06:24:23.624Z","level":"error","message":"Request failed","method":"GET","path":"/leads","statusCode":401,"error":"Invalid token"}
+{"timestamp":"2026-04-18T06:24:23.629Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":401,"durationMs":43,"ip":"::1"}
+{"timestamp":"2026-04-18T06:24:23.639Z","level":"error","message":"Request failed","method":"GET","path":"/leads","statusCode":401,"error":"Invalid token"}
+{"timestamp":"2026-04-18T06:24:23.644Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":401,"durationMs":10,"ip":"::1"}
+{"timestamp":"2026-04-18T06:24:50.659Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":22,"ip":"::1"}
+{"timestamp":"2026-04-18T06:24:51.843Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":16,"ip":"::1"}
+{"timestamp":"2026-04-18T06:25:19.714Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":304,"durationMs":21132,"ip":"::1"}
+{"timestamp":"2026-04-18T06:26:14.205Z","level":"info","message":"HTTP request completed","method":"POST","path":"/generate-outreach","statusCode":200,"durationMs":27,"ip":"::1"}
+{"timestamp":"2026-04-18T06:26:22.516Z","level":"info","message":"HTTP request completed","method":"GET","path":"/lead-reasoning/1","statusCode":200,"durationMs":12,"ip":"::1"}
+{"timestamp":"2026-04-18T06:33:16.204Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-recommendations","statusCode":304,"durationMs":72,"ip":"::1"}
+{"timestamp":"2026-04-18T07:06:08.218Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":284,"ip":"::1"}
+{"timestamp":"2026-04-18T07:07:13.052Z","level":"info","message":"HTTP request completed","method":"POST","path":"/api/v1/public-interest","statusCode":201,"durationMs":94,"ip":"::1"}
+{"timestamp":"2026-04-18T07:07:24.890Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":9,"ip":"::1"}
+{"timestamp":"2026-04-18T07:07:26.317Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":39,"ip":"::1"}
+{"timestamp":"2026-04-18T07:08:10.684Z","level":"info","message":"HTTP request completed","method":"GET","path":"/ai-analysis","statusCode":304,"durationMs":18595,"ip":"::1"}
+{"timestamp":"2026-04-28T05:49:02.253Z","level":"warn","message":"MONGODB_URI not configured. Using in-memory fallback store."}
+{"timestamp":"2026-04-28T05:49:02.283Z","level":"info","message":"Server started","port":5000}
+{"timestamp":"2026-04-28T06:01:18.741Z","level":"info","message":"HTTP request completed","method":"POST","path":"/login","statusCode":200,"durationMs":61,"ip":"::1"}
+{"timestamp":"2026-04-28T06:01:19.760Z","level":"info","message":"HTTP request completed","method":"GET","path":"/leads","statusCode":200,"durationMs":20,"ip":"::1"}

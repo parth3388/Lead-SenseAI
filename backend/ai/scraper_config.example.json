@@ -1,0 +1,34 @@
+{
+  "userAgent": "LeadSenseAI/1.0 (+https://localhost)",
+  "timeoutSeconds": 15,
+  "delaySeconds": 1,
+  "autoSelectSources": false,
+  "maxAutoSources": 3,
+  "sources": [
+    {
+      "name": "Example real estate leads page",
+      "url": "https://example.com/leads",
+      "defaultBudget": 1000000,
+      "defaultUrgency": 5,
+      "converted": -1
+    }
+  ],
+  "sourceCatalog": [
+    {
+      "name": "Scraping demo page",
+      "url": "https://quotes.toscrape.com/",
+      "defaultBudget": 1000000,
+      "defaultUrgency": 4,
+      "converted": -1,
+      "enabled": true
+    },
+    {
+      "name": "Your approved partner leads page",
+      "url": "https://example.com/leads",
+      "defaultBudget": 1500000,
+      "defaultUrgency": 5,
+      "converted": -1,
+      "enabled": false
+    }
+  ]
+}
